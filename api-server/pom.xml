@@ -3,10 +3,10 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.mycompany</groupId>
-  <artifactId>camel-ose-springboot-xml</artifactId>
+  <artifactId>api-server</artifactId>
   <version>1.0.0-SNAPSHOT</version>
-  <name>Fabric8 :: Quickstarts :: Spring-Boot :: Camel XML</name>
-  <description>Spring Boot example running a Camel route defined in XML</description>
+  <name>API Server</name>
+  <description>Api Server example</description>
   <properties>
     <maven-surefire-plugin.version>2.22.2</maven-surefire-plugin.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -31,17 +31,17 @@
       <groupId>org.apache.camel</groupId>
       <artifactId>camel-spring-boot-starter</artifactId>
     </dependency>
-    
+
     <dependency>
       <groupId>org.apache.camel</groupId>
       <artifactId>camel-servlet-starter</artifactId>
     </dependency>
-       
+
        <dependency>
       <groupId>org.apache.camel</groupId>
       <artifactId>camel-http-starter</artifactId>
     </dependency>
-    
+
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-web</artifactId>

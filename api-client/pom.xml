@@ -3,11 +3,11 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.mycompany</groupId>
-  <artifactId>camel-ose-springboot-xml</artifactId>
+  <artifactId>api-client</artifactId>
   <version>1.0.0-SNAPSHOT</version>
-  <name>Fabric8 :: Quickstarts :: Spring-Boot :: Camel XML</name>
-  <description>Spring Boot example running a Camel route defined in XML</description>
-  
+  <name>API CLIENT</name>
+  <description>API Client example</description>
+
   <properties>
     <maven-surefire-plugin.version>2.22.2</maven-surefire-plugin.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -16,7 +16,7 @@
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     <fuse.version>7.9.0.fuse-sb2-790065-redhat-00001</fuse.version>
   </properties>
-  
+
   <dependencyManagement>
     <dependencies>
       <dependency>
@@ -28,7 +28,7 @@
       </dependency>
     </dependencies>
   </dependencyManagement>
-  
+
   <dependencies>
     <dependency>
       <groupId>org.apache.camel</groupId>
@@ -57,21 +57,21 @@
       <artifactId>spring-boot-starter-actuator</artifactId>
     </dependency>
   </dependencies>
-  
+
   <repositories>
     <repository>
       <id>red-hat-ga-repository</id>
       <url>https://maven.repository.redhat.com/ga</url>
     </repository>
   </repositories>
-  
+
   <pluginRepositories>
     <pluginRepository>
       <id>red-hat-ga-repository</id>
       <url>https://maven.repository.redhat.com/ga</url>
     </pluginRepository>
   </pluginRepositories>
-  
+
   <build>
     <defaultGoal>spring-boot:run</defaultGoal>
     <plugins>
@@ -97,7 +97,7 @@
       </plugin>
     </plugins>
   </build>
-  
+
   <profiles>
     <profile>
       <id>openshift</id>
